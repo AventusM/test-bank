@@ -1,0 +1,36 @@
+{
+  "response": {
+    "meetings": [
+      { "id": 1, "startTime": 8, "endTime": 9, "userIds": ["1", "2"] },
+      { "id": 2, "startTime": 9, "endTime": 10, "userIds": ["2", "3"] },
+      { "id": 3, "startTime": 10, "endTime": 11, "userIds": [] },
+      { "id": 4, "startTime": 11, "endTime": 12, "userIds": ["1", "3"] },
+      { "id": 5, "startTime": 12, "endTime": 13, "userIds": ["1", "2", "3"] },
+      { "id": 6, "startTime": 13, "endTime": 14, "userIds": [] },
+      { "id": 7, "startTime": 14, "endTime": 15, "userIds": [] },
+      { "id": 8, "startTime": 15, "endTime": 16, "userIds": [] }
+    ],
+    "users": [
+      {
+        "id": "1",
+        "name": "Juha",
+        "meetingIds": ["1", "4", "5"]
+      },
+      {
+        "id": "2",
+        "name": "Miguel",
+        "meetingIds": ["1", "4", "5"]
+      },
+      {
+        "id": "3",
+        "name": "Anton",
+        "meetingIds": ["2", "4", "5"]
+      }
+    ],
+    "rooms": [
+      { "id": "10", "capacity": "2" },
+      { "id": "11", "capacity": "3" },
+      { "id": "12", "capacity": "4" }
+    ]
+  }
+}
