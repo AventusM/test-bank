@@ -1,36 +1,58 @@
 {
   "response": {
     "meetings": [
-      { "id": 1, "startTime": 8, "endTime": 9, "userIds": ["1", "2"] },
-      { "id": 2, "startTime": 9, "endTime": 10, "userIds": ["2", "3"] },
-      { "id": 3, "startTime": 10, "endTime": 11, "userIds": [] },
-      { "id": 4, "startTime": 11, "endTime": 12, "userIds": ["1", "3"] },
-      { "id": 5, "startTime": 12, "endTime": 13, "userIds": ["1", "2", "3"] },
-      { "id": 6, "startTime": 13, "endTime": 14, "userIds": [] },
-      { "id": 7, "startTime": 14, "endTime": 15, "userIds": [] },
-      { "id": 8, "startTime": 15, "endTime": 16, "userIds": [] }
-    ],
-    "users": [
       {
         "id": "1",
-        "name": "Juha",
-        "meetingIds": ["1", "4", "5"]
+        "startTime": 8,
+        "endTime": 9,
+        "userIds": ["mig", "ant", "mar"]
       },
       {
         "id": "2",
-        "name": "Miguel",
-        "meetingIds": ["1", "4", "5"]
+        "startTime": 9,
+        "endTime": 10,
+        "userIds": ["juh", "mig", "ant", "mar", "oss"]
+      },
+      { "id": "3", "startTime": 11, "endTime": 12, "userIds": ["ant", "oss"] },
+      {
+        "id": "4",
+        "startTime": 12,
+        "endTime": 13,
+        "userIds": ["juh", "mig", "mar"]
+      },
+      { "id": "5", "startTime": 14, "endTime": 16, "userIds": ["ant", "mar"] }
+    ],
+    "users": [
+      {
+        "id": "juh",
+        "name": "Juha",
+        "meetingIds": ["2", "4"]
       },
       {
-        "id": "3",
+        "id": "mig",
+        "name": "Miguel",
+        "meetingIds": ["1", "2", "4"]
+      },
+      {
+        "id": "ant",
         "name": "Anton",
-        "meetingIds": ["2", "4", "5"]
+        "meetingIds": ["1", "2", "3", "5"]
+      },
+      {
+        "id": "mar",
+        "name": "Maria",
+        "meetingIds": ["1", "2", "4", "5"]
+      },
+      {
+        "id": "oss",
+        "name": "Ossi",
+        "meetingIds": ["2", "3"]
       }
     ],
     "rooms": [
-      { "id": "10", "capacity": "2" },
-      { "id": "11", "capacity": "3" },
-      { "id": "12", "capacity": "4" }
+      { "id": "10", "capacity": 2 },
+      { "id": "11", "capacity": 3 },
+      { "id": "12", "capacity": 4 }
     ]
   }
 }
