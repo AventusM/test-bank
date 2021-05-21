@@ -2,57 +2,102 @@
   "response": {
     "meetings": [
       {
-        "id": "1",
-        "startTime": 8,
-        "endTime": 9,
-        "userIds": ["mig", "ant", "mar"]
+        "id": "2",
+        "startTime": "2021-05-21T08:00:00.000Z",
+        "endTime": "2021-05-21T09:00:00.000Z",
+        "userIds": ["juh"],
+        "roomId": "11",
+        "purpose": "Daily"
       },
       {
-        "id": "2",
-        "startTime": 9,
-        "endTime": 10,
-        "userIds": ["juh", "mig", "ant", "mar", "oss"]
+        "id": "3",
+        "startTime": "2021-05-21T09:00:00.000Z",
+        "endTime": "2021-05-21T10:00:00.000Z",
+        "userIds": ["mig"],
+        "roomId": "11",
+        "purpose": "Retrospective"
       },
-      { "id": "3", "startTime": 11, "endTime": 12, "userIds": ["ant", "oss"] },
       {
         "id": "4",
-        "startTime": 12,
-        "endTime": 13,
-        "userIds": ["juh", "mig", "mar"]
+        "startTime": "2021-05-21T10:00:00.000Z",
+        "endTime": "2021-05-21T11:00:00.000Z",
+        "userIds": ["juh"],
+        "roomId": "11",
+        "purpose": "Recruitment"
       },
-      { "id": "5", "startTime": 14, "endTime": 16, "userIds": ["ant", "mar"] }
+      {
+        "id": "5",
+        "startTime": "2021-05-21T11:00:00.000Z",
+        "endTime": "2021-05-21T12:00:00.000Z",
+        "userIds": ["juh"],
+        "roomId": "11",
+        "purpose": "Coffee break"
+      },
+      {
+        "id": "6",
+        "startTime": "2021-05-21T12:00:00.000Z",
+        "endTime": "2021-05-21T13:00:00.000Z",
+        "userIds": ["juh"],
+        "roomId": "11",
+        "purpose": "Gerald bot consultation"
+      },
+      {
+        "id": "7",
+        "startTime": "2021-05-21T13:00:00.000Z",
+        "endTime": "2021-05-21T14:00:00.000Z",
+        "userIds": ["juh"],
+        "roomId": "11",
+        "purpose": "Lunch"
+      },
+      {
+        "id": "8",
+        "startTime": "2021-05-21T14:00:00.000Z",
+        "endTime": "2021-05-21T15:00:00.000Z",
+        "userIds": ["juh"],
+        "roomId": "11",
+        "purpose": "Dinner"
+      },
+      {
+        "id": "10",
+        "startTime": "2021-05-22T08:00:00.000Z",
+        "endTime": "2021-05-22T09:00:00.000Z",
+        "userIds": ["ant"],
+        "roomId": "11",
+        "purpose": "Udemy for business account consultation"
+      }
     ],
     "users": [
       {
         "id": "juh",
         "name": "Juha",
-        "meetingIds": ["2", "4"]
+        "meetingIds": ["2", "4", "5", "6", "7", "8"]
       },
       {
         "id": "mig",
         "name": "Miguel",
-        "meetingIds": ["1", "2", "4"]
+        "meetingIds": ["3"]
       },
       {
         "id": "ant",
         "name": "Anton",
-        "meetingIds": ["1", "2", "3", "5"]
+        "meetingIds": ["10"]
       },
       {
         "id": "mar",
         "name": "Maria",
-        "meetingIds": ["1", "2", "4", "5"]
+        "meetingIds": []
       },
       {
         "id": "oss",
         "name": "Ossi",
-        "meetingIds": ["2", "3"]
+        "meetingIds": []
+      },
+      {
+        "id": "ali",
+        "name": "Aliisa",
+        "meetingIds": []
       }
     ],
-    "rooms": [
-      { "id": "10", "capacity": 2 },
-      { "id": "11", "capacity": 3 },
-      { "id": "12", "capacity": 4 }
-    ]
+    "rooms": [{ "id": "11", "capacity": 3 }]
   }
 }
